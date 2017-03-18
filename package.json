@@ -1,0 +1,57 @@
+{
+  "name": "muenchhausen-client",
+  "version": "0.0.0",
+  "description": "fake data shell client",
+  "homepage": "https://github.com/s-a/muenchhausen-client",
+  "author": {
+    "name": "s-a",
+    "email": "stephan.ahlf@googlemail.com",
+    "url": "https://github.com/s-a"
+  },
+  "files": [
+    "lib"
+  ],
+  "main": "lib/index.js",
+  "bin": {
+    "mh": "lib/index.js"
+  },
+  "keywords": [
+    "terminal",
+    "shell",
+    "console",
+    "fake",
+    "mock",
+    "mocks",
+    "mockup"
+  ],
+  "devDependencies": {
+    "eslint": "^3.1.1",
+    "eslint-config-xo-space": "^0.14.0",
+    "gulp": "^3.9.0",
+    "gulp-eslint": "^2.0.0",
+    "gulp-exclude-gitignore": "^1.0.0",
+    "gulp-line-ending-corrector": "^1.0.1",
+    "gulp-istanbul": "^1.0.0",
+    "gulp-mocha": "^2.0.0",
+    "gulp-plumber": "^1.0.0",
+    "gulp-nsp": "^2.1.0",
+    "gulp-coveralls": "^0.1.0"
+  },
+  "eslintConfig": {
+    "extends": "xo-space",
+    "env": {
+      "mocha": true
+    }
+  },
+  "repository": "s-a/muenchhausen-client",
+  "scripts": {
+    "prepublish": "gulp prepublish",
+    "test": "gulp",
+    "dev": "node lib/index.js fake \"now:{{{date-now 'suffix:am'}}}\trandom:{{{date-random 'suffix:format,min:20200901'}}}\trandom: {{{date-random}}}\" --culture de"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "n-cli": "^1.2.10",
+    "muenchhausen" : "^0.0.0"
+  }
+}
