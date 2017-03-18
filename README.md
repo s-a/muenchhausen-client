@@ -1,4 +1,7 @@
-# muenchhausen-client [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url][![as][coveralls-image]][coveralls-url]
+# muenchhausen-client [![NPM version][npm-image]][npm-url] 
+[![Build Status][travis-image]][travis-url] 
+[![Dependency Status][daviddm-image]][daviddm-url] 
+[![Coverage percentage][coveralls-image]][coveralls-url] [![Codacy Badge](https://api.codacy.com/project/badge/Grade/e795c94f6f1e4e9fa5e4d6e080b198b5)](https://www.codacy.com/app/stephanahlf/muenchhausen-client?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=s-a/muenchhausen-client&amp;utm_campaign=Badge_Grade)
 
 > fake data shell client
 
@@ -28,5 +31,3 @@ MIT © [s-a](https://github.com/s-a)
 [daviddm-url]: https://david-dm.org/s-a/muenchhausen-client
 [coveralls-image]: https://coveralls.io/repos/s-a/muenchhausen-client/badge.svg
 [coveralls-url]: https://coveralls.io/r/s-a/muenchhausen-client
-[codacy-image]: https://api.codacy.com/project/badge/Grade/e795c94f6f1e4e9fa5e4d6e080b198b5
-[codacy-url]: https://www.codacy.com/app/stephanahlf/muenchhausen-client?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=s-a/muenchhausen-client&amp;utm_campaign=Badge_Grade
