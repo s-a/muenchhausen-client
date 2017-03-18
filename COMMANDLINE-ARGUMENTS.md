@@ -3,13 +3,13 @@
 ## Usage
 
 ```sh
-mh <template-string> [--culture en];
+mh fake "now:{{{date-now 'suffix:am'}}}\trandom:{{{date-random 'suffix:format,min:20200901'}}}\trandom: {{{date-random}}}" --culture de
 ```
 
 ## Parameters
 |Name|Description|
 |----|-----------|
-|template-string|A template string to render fake data.|
+|fake <template-string>|A template string to render fake data.|
 |--culture|A local string to specify fake date culture.|
 |help, --help, /? |Show this help.|
 |version, --version, -v|Show version.|
@@ -20,7 +20,6 @@ mh <template-string> [--culture en];
 A locale is an identifier (id) that refers to a set of user preferences that
 tend to be shared across significant swaths of the world. In technical terms,
 it's a String composed of three parts: language, script, and region. For
-example:
 
 |locale|description|
 |------|-----------|
