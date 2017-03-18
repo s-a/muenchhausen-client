@@ -5,16 +5,31 @@
 ## Installation
 
 ```sh
-$ npm install --save muenchhausen-client
+$ npm install -g muenchhausen-client
 ```
 
 ## Usage
 
-```js
-var muenchhausenClient = require('muenchhausen-client');
-
-muenchhausenClient('Rainbow');
+```sh
+mh fake "now:{{{date-now 'suffix:am'}}}\trandom:{{{date-random 'suffix:format,min:20200901'}}}\trandom: {{{date-random}}}" --culture de;
 ```
+
+### yields
+
+```sh
+$ now:18.3.2017   random:26.12.2014       random: 1.9.2014
+```
+
+## Parameters
+|Name|Description|
+|----|-----------|
+|fake <template-string> [--culture en]|A template string to render fake data.|
+|--culture|A local string to specify fake date culture.|
+|help, --help, /? |Show this help.|
+|version, --version, -v|Show version.|
+
+For deatils plsease see [COMMANDLINE-ARGUMENTS.md](COMMANDLINE-ARGUMENTS.md)
+ 
 ## License
 
 MIT © [s-a](https://github.com/s-a)
