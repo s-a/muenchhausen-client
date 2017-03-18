@@ -32,6 +32,9 @@ $ now:18.3.2017   random:26.12.2014       random: 1.9.2014
 |version, --version, -v|Show version.|
 
 For deatils plsease see [COMMANDLINE-ARGUMENTS.md](COMMANDLINE-ARGUMENTS.md)
+
+## API
+ muenchhausen-client is based [muenchhausen](https://github.com/s-a/muenchhausen). A detailed API description is available at [https://s-a.github.io/muenchhausen/](https://s-a.github.io/muenchhausen/)
  
 ## License
 
