@@ -47,7 +47,8 @@
   "scripts": {
     "prepublish": "gulp prepublish",
     "test": "gulp",
-    "dev": "node lib/index.js fake \"now:{{{date-now 'suffix:am'}}}\trandom:{{{date-random 'suffix:format,min:20200901'}}}\trandom: {{{date-random}}}\" --culture de"
+    "dev": "node lib/index.js fake \"now:{{{date-now 'suffix:am'}}}\trandom:{{{date-random 'suffix:format,min:20200901'}}}\trandom: {{{date-random}}}\" --culture de",
+    "bump": "node node_modules/mocha/bin/_mocha && npm run docs && npm version patch && git push && git push --tags && npm publish"
   },
   "license": "MIT",
   "dependencies": {
