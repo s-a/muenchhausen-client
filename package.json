@@ -1,6 +1,6 @@
 {
   "name": "muenchhausen-client",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "fake data shell client",
   "homepage": "https://github.com/s-a/muenchhausen-client",
   "author": {
@@ -53,6 +53,6 @@
   "license": "MIT",
   "dependencies": {
     "n-cli": "^1.2.10",
-    "muenchhausen" : "^0.0.0"
+    "muenchhausen": "^0.0.0"
   }
 }
