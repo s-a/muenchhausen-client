@@ -47,8 +47,9 @@
   "scripts": {
     "prepublish": "gulp prepublish",
     "test": "gulp",
-    "dev": "node lib/index.js fake \"{{{emoji.icon 'name:fast_forward'}}}\t{{{emoji.random}}}\tnow:{{{date.now 'format : { skeleton: GyMMMEdhms }'}}}\trandom:{{{date.random 'suffix:format,min:20200901'}}}\trandom: {{{date.random 'format : { skeleton: GyMMMEdhms }'}}}\" --culture es",
-    "dev-pipe": "echo \"now:{{{date.now 'format : { skeleton: GyMMMEdhms }'}}}\" | node lib/index.js --culture es",
+    "dev": "node lib/index.js fake \"$(emoji.icon name:fast_forward)\t$(emoji.random)\tnow:$(date.now format:{skeleton: GyMMMEdhms} )\trandom:$(date.random suffix:format,min:20200901)\trandom: $(date.random format:{skeleton:GyMMMEdhms})}\" --culture es",
+    "dev-pipe": "echo \"now:$(date.now format:{skeleton:GyMMMEdhms})\" | node lib/index.js --culture es",
+    "dev-pipe-2": "echo \"now:$(date.now format:{skeleton:GyMMMEdhms})\" | node lib/index.js --culture es",
     "bump": "node node_modules/mocha/bin/_mocha && npm version patch && git push && git push --tags && npm publish"
   },
   "license": "MIT",
