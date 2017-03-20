@@ -14,10 +14,12 @@ $ npm install -g muenchhausen-client
 ## Usage
 
 ```sh
-mh fake "now:{{{date-now 'suffix:am'}}}\trandom:{{{date-random 'suffix:format,min:20200901'}}}\trandom: {{{date-random}}}" --culture de;
-	yields -> "now:18.3.2017am	random:3.10.2014	random: 1.11.2013"
-echo "now:{{{date.now 'format : { skeleton: GyMMMEdhms }'}}}" | mh --culture es;
-	yields -> "now:sáb., 18 mar. 2017 d. C. 2:15:35 p. m."
+$ mh fake "now:$(date-now suffix:am)\trandom:$(date-random suffix:format,min:20200901)\trandom: $(date-random)" --culture de;
+# yields -> 
+$ "now:18.3.2017am	random:3.10.2014	random: 1.11.2013"
+$ echo "now:$(date.now format:{ skeleton: GyMMMEdhms })" | mh --culture es;
+# yields -> 
+$ "now:sáb., 18 mar. 2017 d. C. 2:15:35 p. m."
 ```
 
 ### yields
