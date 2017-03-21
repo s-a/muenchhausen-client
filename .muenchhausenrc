@@ -1,0 +1,5 @@
+{
+	"lines" : 5,
+	"template" : "$(date.month) $(date.weekday) $(emoji.icon name:fast_forward)\t$(emoji.random)\tnow:$(date.now)\trandom:$(date.random suffix:format,min:20200901)\trandom: $(date.random)\"",
+	"culture" : "fr-FR"
+}

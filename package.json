@@ -1,6 +1,6 @@
 {
   "name": "muenchhausen-client",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "fake data shell client",
   "homepage": "https://github.com/s-a/muenchhausen-client",
   "author": {
@@ -47,15 +47,15 @@
   "scripts": {
     "prepublish": "gulp prepublish",
     "test": "gulp",
-    "dev": "node lib/index.js fake \"$(date.month) $(date.weekday) $(emoji.icon name:fast_forward)\t$(emoji.random)\tnow:$(date.now)\trandom:$(date.random suffix:format,min:20200901)\trandom: $(date.random)\" --culture de-DE",
-    "dev-pipe": "echo \"now:$(date.now format:{skeleton:GyMMMEdhms})\" | node lib/index.js --culture es",
-    "dev-pipe-2": "echo \"now:$(date.now format:{skeleton:GyMMMEdhms})\" | node lib/index.js --culture es",
+    "dev": "node lib/index.js \"$(date.month) $(date.weekday) $(emoji.icon name:fast_forward)\t$(emoji.random)\tnow:$(date.now)\trandom:$(date.random suffix:format,min:20200901)\trandom: $(date.random)\" --culture de-DE",
+    "dev-pipe": "echo \"now:$(date.now)\" | node lib/index.js --culture es-ES",
+    "dev-pipe-2": "echo \"now:$(date.now)\" | node lib/index.js --culture es-ES",
     "bump": "node node_modules/mocha/bin/_mocha && npm version patch && git push && git push --tags && npm publish"
   },
   "license": "MIT",
   "dependencies": {
     "get-stdin": "^5.0.1",
-    "muenchhausen": "^0.0.0",
+    "muenchhausen": "^0.0.3",
     "n-cli": "^1.2.10"
   }
 }
