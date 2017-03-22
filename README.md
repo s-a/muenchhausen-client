@@ -22,6 +22,8 @@ $ mh "now:$(date.now) random:$(date.random min:20200901)	random:	$(date.random)	
 now:22/02/2017 random:24/09/6451	random:	15/02/9477	08:06:49	jeudi	RndNumber:-6 261 085 541 948 770
 $ mh "now:$(date.now) random:$(date.random min:20200901)	random:	$(date.random)	$(time.now)	$(date.weekday)	RndNumber:$(number.random)" --culture ja-JP
 now:2017/02/22 random:8307/05/21	random:	8192/11/03	0:07:29	金曜日	RndNumber:-3,514,778,193,557,152
+$ mh "$(number.random min:100,max:200)" --culture ja-JP
+198
 ```
 
 ## Syntrax
