@@ -1,6 +1,4 @@
-[![Muenchhausen Logo](/resources/logo-sm.png)]()
-
-# Client 
+# [![Muenchhausen Logo](/resources/logo-sm.png)]() Client 
 
 [![NPM version][npm-image]][npm-url] 
 [![Build Status][travis-image]][travis-url] 
