@@ -14,32 +14,36 @@ $ npm install -g muenchhausen-client
 ## Usage
 
 ```sh
-$ mh fake "now:$(date-now suffix:am)\trandom:$(date-random suffix:format,min:20200901)\trandom: $(date-random)" --culture de;
-# yields -> 
-$ "now:18.3.2017am	random:3.10.2014	random: 1.11.2013"
-$ echo "now:$(date.now format:{ skeleton: GyMMMEdhms })" | mh --culture es;
-# yields -> 
-$ "now:sáb., 18 mar. 2017 d. C. 2:15:35 p. m."
+$ echo "Chuck Noris is a super hero action movie star born on $(date.future)" | mh
+"Chuck Noris is a super hero action movie star born on 06/03/3513"
+$ mh "now:$(date.now) random:$(date.random min:20200901)	random:	$(date.random)	$(time.now)	$(date.weekday)" --culture de-DE
+now:22.02.2017 random:09.01.8692	random:	19.04.7308	08:02:54	Dienstag
+$ mh "now:$(date.now) random:$(date.random min:20200901)	random:	$(date.random)	$(time.now)	$(date.weekday)	RndNumber:$(number.random)" --culture fr-FR
+now:22/02/2017 random:24/09/6451	random:	15/02/9477	08:06:49	jeudi	RndNumber:-6 261 085 541 948 770
+$ mh "now:$(date.now) random:$(date.random min:20200901)	random:	$(date.random)	$(time.now)	$(date.weekday)	RndNumber:$(number.random)" --culture ja-JP
+now:2017/02/22 random:8307/05/21	random:	8192/11/03	0:07:29	金曜日	RndNumber:-3,514,778,193,557,152
 ```
 
-### yields
+## Syntrax
 
-```sh
-$ now:18.3.2017   random:26.12.2014       random: 1.9.2014
-```
+- `mh <template-string> [--culture en-GB]`
+- `echo "<template-string>" | mh [--culture en-GB]`
+
 
 ## Parameters
+
 |Name|Description|
 |----|-----------|
-|fake <template-string> [--culture en]|A template string to render fake data.|
-|--culture|A local string to specify fake date culture.|
-|help, --help, /? |Show this help.|
+|<template-string>|A template string to render fake data.|
+|--culture|A local string to specify fake data culture.|
+|help, --help, /? |Show help.|
 |version, --version, -v|Show version.|
 
 For deatils plsease see [COMMANDLINE-ARGUMENTS.md](COMMANDLINE-ARGUMENTS.md)
 
 ## API
- muenchhausen-client is based [muenchhausen](https://github.com/s-a/muenchhausen). A detailed API description is available at [https://s-a.github.io/muenchhausen/](https://s-a.github.io/muenchhausen/)
+
+ muenchhausen-client is based [muenchhausen](https://github.com/s-a/muenchhausen). A detailed API description is available at [https://github.com/s-a/muenchhausen/tree/master/docs](https://github.com/s-a/muenchhausen/tree/master/docs)
  
 ## License
 
