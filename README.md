@@ -1,4 +1,8 @@
-# muenchhausen-client [![NPM version][npm-image]][npm-url] 
+[![Muenchhausen Logo](/resources/logo-sm.png)]()
+
+# Client 
+
+[![NPM version][npm-image]][npm-url] 
 [![Build Status][travis-image]][travis-url] 
 [![Dependency Status][daviddm-image]][daviddm-url] 
 [![Coverage percentage][coveralls-image]][coveralls-url] [![Codacy Badge](https://api.codacy.com/project/badge/Grade/e795c94f6f1e4e9fa5e4d6e080b198b5)](https://www.codacy.com/app/stephanahlf/muenchhausen-client?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=s-a/muenchhausen-client&amp;utm_campaign=Badge_Grade)
@@ -26,7 +30,7 @@ $ mh "$(number.random min:100,max:200)" --culture ja-JP
 198
 ```
 
-## Syntrax
+## Syntax
 
 - `mh <template-string> [--culture en-GB]`
 - `echo "<template-string>" | mh [--culture en-GB]`
