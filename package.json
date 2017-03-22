@@ -16,13 +16,22 @@
     "mh": "lib/index.js"
   },
   "keywords": [
+    "test",
+    "testing",
+    "testing-tools",
+    "test-automation",
+    "tests",
     "terminal",
     "shell",
     "console",
-    "fake",
+    "console-application",
+    "console-tool",
     "mock",
-    "mocks",
-    "mockup"
+    "mocking",
+    "mockup",
+    "fake",
+    "fake-content",
+    "fake-data"
   ],
   "devDependencies": {
     "eslint": "^3.1.1",
