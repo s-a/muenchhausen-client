@@ -15,6 +15,7 @@
   "bin": {
     "mh": "lib/index.js"
   },
+  "preferGlobal": true,
   "keywords": [
     "test",
     "testing",
