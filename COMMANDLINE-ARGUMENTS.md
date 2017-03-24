@@ -15,6 +15,7 @@ See https://github.com/s-a/muenchhausen/tree/master/docs.
 |----|-----------|
 |<template-string>|A template string to render fake data.|
 |--culture|A local string to specify fake date culture.|
+|--rows|The number of rows you expect which defaults to "1".|
 |help, --help, /? |Show this help.|
 |version, --version, -v|Show version.|
 
