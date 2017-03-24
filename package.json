@@ -1,6 +1,6 @@
 {
   "name": "muenchhausen-client",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "description": "fake data shell client",
   "homepage": "https://github.com/s-a/muenchhausen-client",
   "author": {
@@ -46,6 +46,7 @@
     "gulp-mocha": "^2.0.0",
     "gulp-nsp": "^2.1.0",
     "gulp-plumber": "^1.0.0",
+    "mock-stdin": "^0.3.1",
     "should": "^11.2.1"
   },
   "eslintConfig": {
@@ -66,7 +67,7 @@
   "license": "MIT",
   "dependencies": {
     "get-stdin": "^5.0.1",
-    "muenchhausen": "^0.0.3",
+    "muenchhausen": "^0.0.5",
     "n-cli": "^1.2.10"
   }
 }

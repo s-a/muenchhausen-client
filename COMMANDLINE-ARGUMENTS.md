@@ -1,41 +1,23 @@
-# Help
+#Muenchhausen help
 
-## Usage
+## Syntax
 
 ```sh
-mh fake "now:{{{date-now 'suffix:am'}}}\trandom:{{{date-random 'suffix:format,min:20200901'}}}\trandom: {{{date-random}}}" --culture de
+mh <template-string> [--culture en-GB] [--rows 1]
+echo "<template-string>" | mh [--culture en-GB] [--rows 1]
 ```
+## Available template commands:
+
+See https://github.com/s-a/muenchhausen/tree/master/docs.
 
 ## Parameters
 |Name|Description|
 |----|-----------|
-|fake <template-string>|A template string to render fake data.|
+|<template-string>|A template string to render fake data.|
 |--culture|A local string to specify fake date culture.|
 |help, --help, /? |Show this help.|
 |version, --version, -v|Show version.|
 
-
 ### Locales
 
-A locale is an identifier (id) that refers to a set of user preferences that
-tend to be shared across significant swaths of the world. In technical terms,
-it's a String composed of three parts: language, script, and region. For
-
-|locale|description|
-|------|-----------|
-|*en-Latn-US*|English as spoken in the Unites States in the Latin script.|
-|*en-US*|English as spoken in the Unites States (Latin script is deduced given it's the most likely script used in this place).|
-|*en*|English (United States region and Latin script are deduced given they are respectively the most likely region and script used in this pace).|
-|*en-GB*|English as spoken in the United Kingdom (Latin script is deduced given it's the most likely script used in this place).|
-|*en-IN*|English as spoken in India (Latin script is deduced).|
-|*es*|Spanish (Spain region and Latin script are deduced).|
-|*es-MX*|Spanish as spoken in Mexico (Latin script is deduced).|
-|*zh*|Chinese (China region and Simplified Han script are deduced).|
-|*zh-TW*|Chinese as spoken in Taiwan (Traditional Han script is deduced).|
-|*ja*|Japanese (Japan region and Japanese script are deduced).|
-|*de*|German (Germany region and Latin script are deduced).|
-|*pt*|Portuguese (Brazil region and Latin script are deduced).|
-|*pt-PT*|Portuguese as spoken in Portugal (Latin script is deduced).|
-|*fr*|French (France region and Latin script are deduced).|
-|*ru*|Russian (Russia region and Cyrillic script are deduced).|
-|*ar*|Arabic (Egypt region and Arabic script are deduced).|
+af-ZA, sq-AL, ar-DZ, ar-BH, ar-EG, ar-IQ, ar-JO, ar-KW, ar-LB, ar-LY, ar-MA, ar-OM, ar-QA, ar-SA, ar-SY, ar-TN, ar-AE, ar-YE, hy-AM, Cy-az-AZ, Lt-az-AZ, eu-ES, be-BY, bg-BG, ca-ES, zh-CN, zh-HK, zh-MO, zh-SG, zh-TW, zh-CHS, zh-CHT, hr-HR, cs-CZ, da-DK, div-MV, nl-BE, nl-NL, en-AU, en-BZ, en-CA, en-CB, en-IE, en-JM, en-NZ, en-PH, en-ZA, en-TT, en-GB, en-US, en-ZW, et-EE, fo-FO, fa-IR, fi-FI, fr-BE, fr-CA, fr-FR, fr-LU, fr-MC, fr-CH, gl-ES, ka-GE, de-AT, de-DE, de-LI, de-LU, de-CH, el-GR, gu-IN, he-IL, hi-IN, hu-HU, is-IS, id-ID, it-IT, it-CH, ja-JP, kn-IN, kk-KZ, kok-IN, ko-KR, ky-KZ, lv-LV, lt-LT, mk-MK, ms-BN, ms-MY, mr-IN, mn-MN, nb-NO, nn-NO, pl-PL, pt-BR, pt-PT, pa-IN, ro-RO, ru-RU, sa-IN, Cy-sr-SP, Lt-sr-SP, sk-SK, sl-SI, es-AR, es-BO, es-CL, es-CO, es-CR, es-DO, es-EC, es-SV, es-GT, es-HN, es-MX, es-NI, es-PA, es-PY, es-PE, es-PR, es-ES, es-UY, es-VE, sw-KE, sv-FI, sv-SE, syr-SY, ta-IN, tt-RU, te-IN, th-TH, tr-TR, uk-UA, ur-PK, Cy-uz-UZ, Lt-uz-UZ, vi-VN

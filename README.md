@@ -13,11 +13,16 @@
 $ npm install -g muenchhausen-client
 ```
 
+## Syntax
+
+- `mh <template-string> [--culture en-GB] [--rows 1]`
+- `echo "<template-string>" | mh [--culture en-GB] [--rows 1]`
+
 ## Usage
 
 ```sh
-$ echo "Chuck Noris is a super hero action movie star born on $(date.future)" | mh
-"Chuck Noris is a super hero action movie star born on 06/03/3513"
+$ echo "Fake-News: Chuck Noris is a super hero action movie star born on $(date.future)" | mh
+"Fake-News: Chuck Noris is a super hero action movie star born on 06/03/3513"
 $ mh "now:$(date.now) random:$(date.random min:20200901)	random:	$(date.random)	$(time.now)	$(date.weekday)" --culture de-DE
 now:22.02.2017 random:09.01.8692	random:	19.04.7308	08:02:54	Dienstag
 $ mh "now:$(date.now) random:$(date.random min:20200901)	random:	$(date.random)	$(time.now)	$(date.weekday)	RndNumber:$(number.random)" --culture fr-FR
@@ -28,31 +33,25 @@ $ mh "$(number.random min:100,max:200)" --culture ja-JP
 198
 ```
 
-## Syntax
-
-- `mh <template-string> [--culture en-GB]`
-- `echo "<template-string>" | mh [--culture en-GB]`
-
-
 ## Parameters
 
 |Name|Description|
 |----|-----------|
 |<template-string>|A template string to render fake data.|
-|--culture|A local string to specify fake data culture.|
+|--culture|A local string to specify fake data culture which defaults to "en-GB".|
+|--rows|The number of rows you expect which defaults to "1".|
 |help, --help, /? |Show help.|
 |version, --version, -v|Show version.|
 
-For deatils plsease see [COMMANDLINE-ARGUMENTS.md](COMMANDLINE-ARGUMENTS.md)
+For more deatils plsease see [COMMANDLINE-ARGUMENTS.md](COMMANDLINE-ARGUMENTS.md)
 
 ## API
 
- muenchhausen-client is based [muenchhausen](https://github.com/s-a/muenchhausen). A detailed API description is available at [https://github.com/s-a/muenchhausen/tree/master/docs](https://github.com/s-a/muenchhausen/tree/master/docs)
+ muenchhausen-client is based on the [muenchhausen](https://github.com/s-a/muenchhausen) node module. A detailed API description is available at [https://github.com/s-a/muenchhausen/tree/master/docs](https://github.com/s-a/muenchhausen/tree/master/docs)
  
 ## License
 
 MIT © [s-a](https://github.com/s-a)
-
 
 [npm-image]: https://badge.fury.io/js/muenchhausen-client.svg
 [npm-url]: https://npmjs.org/package/muenchhausen-client

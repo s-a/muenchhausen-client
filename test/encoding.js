@@ -1,13 +1,13 @@
-var fs = require('fs');
-var path = require('path');
-require('should');
+var fs = require("fs");
+var path = require("path");
+require("should");
 
 var getLineEndingsStyle = function(fn){
 	var result = "unknown";
 	var styles = {
-		'unix': /[^\r]\n/,
-		'osx': /\r/,
-		'windows': /\r\n/
+		"unix": /[^\r]\n/,
+		"osx": /\r/,
+		"windows": /\r\n/
 	};
 
 	var text = fs.readFileSync(fn);
@@ -23,8 +23,8 @@ var getLineEndingsStyle = function(fn){
 }
 
 
-describe('unix-style', function(){
-	it('lib/index.js should have unix line ending style', function(){
+describe("unix-style", function(){
+	it("lib/index.js should have unix line ending style", function(){
 		getLineEndingsStyle(path.join(__dirname, "..", "lib", "index.js")).should.equal("unix");
 	});
 });
