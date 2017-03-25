@@ -1,4 +1,4 @@
-# [![Muenchhausen Logo](/resources/logo-sm.png)]() Client 
+# [![Muenchhausen Logo](/resources/logo-sm.png)](/README.md)[![Muenchhausen Client Logo](/resources/client-logo-xs.png)](https://github.com/s-a/muenchhausen-client/blob/master/README.md)
 
 [![NPM version][npm-image]][npm-url] 
 [![Build Status][travis-image]][travis-url] 
