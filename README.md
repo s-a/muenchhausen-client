@@ -1,4 +1,7 @@
-# [![Muenchhausen Logo](/resources/logo-sm.png)](/README.md)[![Muenchhausen Client Logo](/resources/client-logo-xs.png)](https://github.com/s-a/muenchhausen-client/blob/master/README.md)
+# [![module logo][module-logo-path]][module-logo-url]
+
+[module-logo-path]: /resources/logo-sm.png
+[module-logo-url]: /README.md
 
 [![NPM version][npm-image]][npm-url] 
 [![Build Status][travis-image]][travis-url] 
