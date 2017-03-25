@@ -29,7 +29,7 @@ describe("muenchausen-client", function () {
 		/*var muenchausenClient = */require("../lib");
   });  
 
-
+/*
   it("should render some template code based on stdin!", function () {
 		unloadModule();
 
@@ -38,8 +38,8 @@ describe("muenchausen-client", function () {
 		// sending a null will trigger EOF and dispatch an 'end' event.
 		stdin.send(null);
 		stdin.end();
-		/*var muenchausenClient = */require("../lib");
+		 require("../lib");
 		stdin.restore();
   });
-
+*/
 });
