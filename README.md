@@ -5,7 +5,7 @@
 [![Dependency Status][daviddm-image]][daviddm-url] 
 [![Coverage percentage][coveralls-image]][coveralls-url] [![Codacy Badge](https://api.codacy.com/project/badge/Grade/e795c94f6f1e4e9fa5e4d6e080b198b5)](https://www.codacy.com/app/stephanahlf/muenchhausen-client?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=s-a/muenchhausen-client&amp;utm_campaign=Badge_Grade)
 
-> fake data shell client
+> Quickly get realistic mochup data in your shell
 
 ## Installation
 
@@ -20,8 +20,10 @@ $ npm install -g muenchhausen-client
 
 ## Usage
 
+> Start Within Minutes...
+
 ```sh
-$ echo "Fake-News: Chuck Noris is a super hero action movie star born on $(date.future)" | mh
+$ echo "Fake-News: $(person.firstname) $(person.lastname) is a super hero action movie star born on $(date.future)" | mh
 "Fake-News: Chuck Noris is a super hero action movie star born on 06/03/3513"
 $ mh "now:$(date.now) random:$(date.random min:20200901)	random:	$(date.random)	$(time.now)	$(date.weekday)" --culture de-DE
 now:22.02.2017 random:09.01.8692	random:	19.04.7308	08:02:54	Dienstag
@@ -32,6 +34,9 @@ now:2017/02/22 random:8307/05/21	random:	8192/11/03	0:07:29	金曜日	RndNumber:
 $ mh "$(number.random min:100,max:200)" --culture ja-JP
 198
 ```
+
+[All fake commands available in templates](https://github.com/s-a/muenchhausen/tree/master/docs)
+
 
 ## Parameters
 
@@ -47,7 +52,7 @@ For more deatils plsease see [COMMANDLINE-ARGUMENTS.md](COMMANDLINE-ARGUMENTS.md
 
 ## API
 
- muenchhausen-client is based on the [muenchhausen](https://github.com/s-a/muenchhausen) node module. A detailed API description is available at [https://github.com/s-a/muenchhausen/tree/master/docs](https://github.com/s-a/muenchhausen/tree/master/docs)
+ `muenchhausen-client` is based on the [muenchhausen](https://github.com/s-a/muenchhausen) node module. A detailed API description is available at [https://github.com/s-a/muenchhausen/tree/master/docs](https://github.com/s-a/muenchhausen/tree/master/docs)
  
 ## License
 

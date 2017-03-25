@@ -1,7 +1,7 @@
 {
   "name": "muenchhausen-client",
   "version": "1.0.1",
-  "description": "fake data shell client",
+  "description": "Shell client to generate huge quantities of authentic fake data for testing purposes or mockups.",
   "homepage": "https://github.com/s-a/muenchhausen-client",
   "author": {
     "name": "s-a",
@@ -23,6 +23,7 @@
     "test-automation",
     "tests",
     "terminal",
+    "bash",
     "shell",
     "console",
     "console-application",
