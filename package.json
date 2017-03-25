@@ -69,7 +69,7 @@
   "dependencies": {
     "get-stdin": "^5.0.1",
     "minimist": "^1.2.0",
-    "muenchhausen": "^0.0.5",
+    "muenchhausen": "^0.0.8",
     "n-cli": "^1.2.10"
   }
 }

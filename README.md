@@ -28,12 +28,17 @@ $ npm install -g muenchhausen-client
 ```sh
 $ echo "Fake-News: $(person.firstname) $(person.lastname) is a super hero action movie star born on $(date.future)" | mh
 "Fake-News: Chuck Noris is a super hero action movie star born on 06/03/3513"
+
 $ mh "now:$(date.now) random:$(date.random min:20200901)	random:	$(date.random)	$(time.now)	$(date.weekday)" --culture de-DE
 now:22.02.2017 random:09.01.8692	random:	19.04.7308	08:02:54	Dienstag
-$ mh "now:$(date.now) random:$(date.random min:20200901)	random:	$(date.random)	$(time.now)	$(date.weekday)	RndNumber:$(number.random)" --culture fr-FR
-now:22/02/2017 random:24/09/6451	random:	15/02/9477	08:06:49	jeudi	RndNumber:-6 261 085 541 948 770
-$ mh "now:$(date.now) random:$(date.random min:20200901)	random:	$(date.random)	$(time.now)	$(date.weekday)	RndNumber:$(number.random)" --culture ja-JP
-now:2017/02/22 random:8307/05/21	random:	8192/11/03	0:07:29	金曜日	RndNumber:-3,514,778,193,557,152
+
+$ c:\git\muenchhausen>mh "$(person.firstname) $(person.lastname) | $(address.random)$(address.street) - $(address.number), $(address.city), $(address.postcode)" --rows 5 --culture fr-FR
+Ange Moreau | rue jean antoine chaptal - 159, Plaisir, 78370
+Henriette Robert | rue jean louis gay lussac - 57, Plaisir, 78370
+Justine Thomas | rue lavoisier - 129, Houilles, 78800
+Alphonse Richard | grande rue - 97, Chambourcy, 78240
+Bruno Dubois | rue marie jean antoine condorcet - 74, Plaisir, 78370
+
 $ mh "$(number.random min:100,max:200)" --culture ja-JP
 198
 ```
