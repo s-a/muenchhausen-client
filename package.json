@@ -35,21 +35,6 @@
     "fake-content",
     "fake-data"
   ],
-  "devDependencies": {
-    "eslint": "^3.1.1",
-    "eslint-config-xo-space": "^0.16.0",
-    "gulp": "^3.9.0",
-    "gulp-coveralls": "^0.1.0",
-    "gulp-eslint": "^3.0.1",
-    "gulp-exclude-gitignore": "^1.0.0",
-    "gulp-istanbul": "^1.0.0",
-    "gulp-line-ending-corrector": "^1.0.1",
-    "gulp-mocha": "^2.0.0",
-    "gulp-nsp": "^2.1.0",
-    "gulp-plumber": "^1.0.0",
-    "mock-stdin": "^0.3.1",
-    "should": "^11.2.1"
-  },
   "eslintConfig": {
     "extends": "xo-space",
     "env": {
@@ -58,18 +43,31 @@
   },
   "repository": "s-a/muenchhausen-client",
   "scripts": {
-    "prepublish": "gulp prepublish",
-    "test": "gulp",
-    "dev": "node lib/index.js \"$(date.month) $(date.weekday) $(emoji.icon name:fast_forward)\t$(emoji.random)\tnow:$(date.now)\trandom:$(date.random suffix:format,min:20200901)\trandom: $(date.random)\" --culture de-DE",
+    "dev": "node index.js",
     "dev-pipe": "echo \"now:$(date.now)\" | node lib/index.js --culture es-ES",
     "dev-pipe-2": "echo \"now:$(date.now)\" | node lib/index.js --culture es-ES",
-    "bump": "node node_modules/mocha/bin/_mocha && npm version patch && git push && git push --tags && npm publish"
+    "lcov-file": "node node_modules/nyc/bin/nyc.js report --reporter=lcov",
+    "coverage": "node node_modules/nyc/bin/nyc.js --reporter=html --reporter=text mocha && npm run lcov-file",
+    "coveralls": "cat ./coverage/lcov.info | node node_modules/coveralls/bin/coveralls.js",
+    "eslint": "node node_modules/eslint/bin/eslint.js ./lib",
+    "webpack": "node_modules/.bin/webpack --config webpack.config.js",
+    "debug": "iron-node node_modules/mocha/bin/_mocha",
+    "bump": "npm test && npm version patch && git push && git push --tags && npm publish",
+    "mocha": "node node_modules/mocha/bin/_mocha",
+    "test": "npm run eslint && npm run coverage"
   },
   "license": "MIT",
   "dependencies": {
     "get-stdin": "^5.0.1",
     "minimist": "^1.2.0",
-    "muenchhausen": "^0.0.8",
+    "muenchhausen": "^1.0.2",
     "n-cli": "^1.2.10"
+  },
+  "devDependencies": {
+    "coveralls": "^2.13.1",
+    "eslint": "^4.0.0",
+    "mocha": "^3.4.2",
+    "nyc": "^11.0.2",
+    "should": "^11.2.1"
   }
 }
